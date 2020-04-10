@@ -3,7 +3,7 @@
 /* 用于获取根元素 */
 :root {
   /* 定义一些变量 */
-  --color-text: #666;
+  --color-text: #333;
   --color-high-text: #ff5777;
   --color-tint: #ff8198;
   --color-background: #fff;
@@ -29,6 +29,15 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
 }
 
 a {

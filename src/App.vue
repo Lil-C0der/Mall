@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <h2>Hello Vue</h2>
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
+    <main-tab-bar></main-tab-bar>
   </div>
 </template>
 
 <script>
+import MainTabBar from "components/content/mainTabBar/MainTabBar";
 export default {
-  name: "App",
-  components: {}
+  name: "app",
+  components: {
+    MainTabBar,
+  },
 };
 </script>
 

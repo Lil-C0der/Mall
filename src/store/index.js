@@ -7,7 +7,6 @@ import getters from "store/getters";
 Vue.use(Vuex);
 
 const state = {
-  // cartList: [];
   cartList: [
     {
       count: 2,
@@ -96,6 +95,7 @@ const state = {
       isChecked: true
     }
   ]
+  // cartList: []
 };
 
 const store = new Vuex.Store({

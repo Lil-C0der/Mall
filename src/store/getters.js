@@ -9,11 +9,13 @@ export default {
     return state.cartList;
   },
   // 全选按钮的状态
-  ischeckAll(state) {
+  isSelectAll(state) {
     const getIsChecked = n => n.isChecked;
     // // 判断是否存在没有被勾选的商品
     const hasUnselect = (pre, cur) => pre && cur;
-    return state.cartList.map(getIsChecked).reduce(hasUnselect, true);
+    if (!state.cartList.length) {
+      return false;
+    } else return state.cartList.map(getIsChecked).reduce(hasUnselect, true);
 
     // 第二种方法
     // const uncheck = n => !n.isChecked;

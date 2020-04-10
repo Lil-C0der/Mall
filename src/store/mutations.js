@@ -2,9 +2,10 @@ import * as types from "store/types";
 
 export default {
   [types.ADD_CART](state, payload) {
-    state.cartList.push(payload);
     // 修改商品选中状态
     payload.isChecked = true;
+    // 入栈
+    state.cartList.push(payload);
   },
   [types.ADD_COUNT](state, payload) {
     payload.count++;

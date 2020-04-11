@@ -2,7 +2,7 @@
   <div>
     <li>
       <div class="item-pic" @click="itemClick">
-        <img :src="showImg" alt="" @load="imgLoad" />
+        <img v-lazy="showImg" alt="" @load="imgLoad" />
       </div>
 
       <span class="item-info">

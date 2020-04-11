@@ -168,7 +168,6 @@ export default {
       // 吸顶效果
       this.isTabShow = Math.abs(y) > this.tabOffsetTop;
     },
-    // TODO 上拉加载相关
     loadMore() {
       this.$refs.scroll.refresh();
       this.getHomeGoods(this.currentType);
@@ -216,12 +215,6 @@ export default {
   left: 0;
   right: 0;
 }
-/* XXX 下面这种方法也可以 需要去掉定位和paddin-top */
-/* #home .scroll-wrapper {
-  margin-top: 44px;
-  height: calc(100% - 93px);
-  overflow: hidden;
-} */
 #home .center {
   font-size: 22px;
   font-weight: 500;

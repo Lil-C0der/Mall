@@ -92,8 +92,6 @@ export default {
     getDetail(iid) {
       getDetail(iid).then(res => {
         const data = res.result;
-        console.log(data);
-
         this.topImg = data.itemInfo.topImages;
         // 获取商品信息
         this.goods = new Goods(

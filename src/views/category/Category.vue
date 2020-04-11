@@ -1,5 +1,6 @@
 <template>
-  <div class="wrapper">
+  <div class="category-wrapper">
+    <!-- TODO 分类页面 -->
     <ul class="content">
       <h2>"CATEGORY"</h2>
       <li>分类1</li>
@@ -119,7 +120,7 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
+.category-wrapper {
   height: 300px;
   overflow: hidden;
   overflow-y: scroll;

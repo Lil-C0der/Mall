@@ -56,13 +56,9 @@ export default {
         this.$emit("scroll", pos.y);
       });
     }
-    // TODO 上拉加载相关
-    // 上拉加载;
-    // if (this.pullUpLoad) {
     this.scroll.on("pullingUp", () => {
       this.$emit("pullingUp");
     });
-    // }
   }
 };
 </script>

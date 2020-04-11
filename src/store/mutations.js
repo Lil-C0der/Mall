@@ -4,7 +4,7 @@ export default {
   [types.ADD_CART](state, payload) {
     // 修改商品选中状态
     payload.isChecked = true;
-    // 入栈
+    // 加入cartList
     state.cartList.push(payload);
   },
   [types.ADD_COUNT](state, payload) {

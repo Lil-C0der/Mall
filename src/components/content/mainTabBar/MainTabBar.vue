@@ -1,13 +1,5 @@
 <template>
   <tab-bar class="tab-bar">
-    <!-- XXX v-for循环生成item -->
-    <!-- <tab-bar-item activeColor="#FF5777" :link="'/'+item.key" :key="item.key" v-for="item in items">
-      <img slot="item-icon" :src="item.src" alt />
-      <img slot="item-icon-active" :src="item.src_active" alt />
-      <span slot="item-text">{{ item.text }}</span>
-    </tab-bar-item>-->
-
-    <!-- <div> -->
     <tab-bar-item link="/home" activeColor="#FF5777">
       <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt />
       <img
@@ -46,7 +38,6 @@
       />
       <span slot="item-text">我的</span>
     </tab-bar-item>
-    <!-- </div> -->
   </tab-bar>
 </template>
 

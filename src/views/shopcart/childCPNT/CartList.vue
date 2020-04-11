@@ -29,10 +29,7 @@ export default {
     Scroll,
     CartListItem
   },
-  computed: {
-    // ...mapGetters(["cartList"])
-    // ...mapState(["cartList"])
-  },
+  computed: {},
   activated() {
     this.$refs.scroll.refresh();
   }

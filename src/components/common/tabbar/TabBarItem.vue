@@ -47,7 +47,7 @@ export default {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .tab-bar-item img {
   height: 20px;

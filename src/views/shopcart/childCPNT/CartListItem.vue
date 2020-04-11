@@ -70,14 +70,17 @@ export default {
 }
 .item-wrap {
   margin-left: 24px;
+  position: relative;
 }
 .item-img {
   width: 120px;
   height: 180px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 .item-img img {
+  width: 100%;
   height: 100%;
   display: block;
 }
@@ -92,16 +95,15 @@ export default {
   text-overflow: ellipsis;
 }
 .item-info {
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   position: absolute;
-  width: 290px;
   right: 0px;
   top: 0;
   bottom: 0;
   overflow: hidden;
   padding: 5px;
-  padding-left: 30px;
+  width: 260px;
   overflow: hidden;
 }
 .item-info .item-desc {

@@ -21,8 +21,6 @@
     </scroll>
     <back-top v-show="isShowBackTop" @click.native="backTop" />
     <detail-bottom-bar @addToCart="addToCart" />
-
-    <!-- <toast :msg="toastMsg" :show="toastShow"></toast> -->
   </div>
 </template>
 
@@ -158,15 +156,7 @@ export default {
       product.price = this.goods.nowPrice;
       product.realPrice = this.goods.realPrice;
 
-      // this.$store.dispatch("addCart", product).then(() => {
-      //   console.log("dddd");
-      // });
       this.addCart(product).then(res => {
-        // this.toastMsg = res;
-        // this.toastShow = true;
-        // setTimeout(() => {
-        //   this.toastShow = false;
-        // }, 500);
         this.$toast.show(res, 1200);
       });
     }

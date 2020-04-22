@@ -22,7 +22,6 @@
         <span class="comment-date">{{ comment.created | showDate }}</span>
         <span class="comment-style">{{ comment.style }}</span>
       </div>
-      <!-- <div  v-if="comment.images" class="comment-img"> -->
       <div class="comment-img">
         <img :src="n" v-for="(n, i) in comment.images" :key="i" alt="" />
       </div>

@@ -1,8 +1,6 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://152.136.185.210:8000/api/h8",
-  // baseURL: "http://123.207.32.32:8000/api/h8",
   timeout: 5000
 });
 
@@ -12,9 +10,7 @@ instance.interceptors.request.use(
     // console.log(config);
     return config;
   },
-  err => {
-    console.log("err---" + err);
-  }
+  err => Promise.reject(err)
 );
 
 instance.interceptors.response.use(
@@ -22,9 +18,7 @@ instance.interceptors.response.use(
     // console.log(res.data);
     return res.data;
   },
-  err => {
-    console.log("err---" + err);
-  }
+  err => Promise.reject(err)
 );
 
 export default instance;

@@ -134,7 +134,7 @@ export default {
       this.getData(currentIndex);
     },
     // BUG 可能有BUG!!!
-    //保留GoodsList组件滚动位置
+    // 保留GoodsList组件滚动位置
     leaveTab(i) {
       this.prevIndex = i;
       this.listY[this.prevIndex] = this.$refs.scroll.getScrollY();

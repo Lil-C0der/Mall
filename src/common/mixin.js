@@ -12,7 +12,6 @@ export const imgListenerMixin = {
       refresh();
     };
     this.$bus.$on("itemImgLoad", this.itemImgListener);
-    console.log("mixin");
   },
   deactivated() {
     // 离开时移除监听

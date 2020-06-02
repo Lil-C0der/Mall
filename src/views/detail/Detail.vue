@@ -123,7 +123,6 @@ export default {
       this.themeOffsetTop.push(this.$refs.params.$el.offsetTop);
       this.themeOffsetTop.push(this.$refs.comment.$el.offsetTop);
       this.themeOffsetTop.push(this.$refs.recommend.$el.offsetTop);
-      // FIXME 导航栏44px高度bug
       this.themeOffsetTop = this.themeOffsetTop.map((n, i) => n > 0 && n - 44);
     },
     // 锚点定位
